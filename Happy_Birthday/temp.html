@@ -10,12 +10,13 @@
 </head>
 
 <body style="margin: 0px; overflow: hidden">
+    
 <a-scene embedded arjs="debugUIEnabled: false;">
         <a-assets>
             <a-asset-item id="cake-obj" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/cake.obj"></a-asset-item>
             <a-asset-item id="cake-mtl" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/cake.mtl"></a-asset-item>
             <a-asset-item id="brush" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/brush.json"></a-asset-item>
-            <!--
+            <!-- I've commnted it because it takes too much time to download and play this audio file   
             <audio id="bday" src="assets/bday.mp3"></audio>
             -->
         </a-assets>
@@ -26,11 +27,10 @@
                 <a-entity position="0 -7 -15" particle-system="preset: default; color:#f9e154; accelerationValue: 0, -10, 0; particleCount: 3000; direction: -1; rotationAxis: z; rotation:-90, 0 0"></a-entity>
             </a-entity>
             <a-entity rotation="-120 0 0" scale="1 1 1">
-                <a-entity position="-1 0.1 -1" material="color: red" scale="0.5 0.5 0.5" text-geometry="value: Happy Birthday Sudhir; font: #brush"
-                    sound="src:#bday; autoplay: true; loop: true; on:click">
+                <a-entity position="-1 0.1 -1" material="color: red" scale="0.5 0.5 0.5" text-geometry="value: Happy Birthday Sudhir; font: #brush" sound="src:#bday; autoplay: true; loop: true; on:click">
                 </a-entity>
             </a-entity>
-        </a-marker-camera>
+        </a-marker>
 
     </a-scene>
 </body>
