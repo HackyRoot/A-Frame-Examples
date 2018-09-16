@@ -2,7 +2,11 @@
 AR/VR projects created using Mozilla's  [A-Frame framework](https://aframe.io/)
 
 ## Demo:
-- [Wish Your Friends on their Birthday using AR](https://hackyroot.github.io/A-Frame-Examples/Happy_Birthday/demo.html)
+- [Simple cube and sphere in AR](https://hackyroot.github.io/A-Frame-Examples/Happy_Birthday/1-basic.html)
+- [Text in AR](https://hackyroot.github.io/A-Frame-Examples/Happy_Birthday/2-more-text.html)
+- [3D model in AR](https://hackyroot.github.io/A-Frame-Examples/Happy_Birthday/3-3d_model.html)
+- [Particles in AR](https://hackyroot.github.io/A-Frame-Examples/Happy_Birthday/4-particle.html)
+- [Wish Birthday using AR](https://hackyroot.github.io/A-Frame-Examples/Happy_Birthday/5-final.html)
 
 ## Blog:
 - [How I Wished My Friend On Her Birthday Using Augmented Reality](https://medium.com/@Hackyroot/https-medium-com-hackyroot-happy-birthday-using-aframe-9d2f0d177853)
