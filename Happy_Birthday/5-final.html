@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>HBD Aneri</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+</head>
+
+<body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+        
+        <a-assets>
+            <a-asset-item id="cake-obj" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/cake.obj"></a-asset-item>
+            <a-asset-item id="cake-mtl" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/cake.mtl"></a-asset-item>
+            <a-asset-item id="ultra" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/e4751baf/Happy_Birthday/assets/ultra.json"></a-asset-item>
+        </a-assets>
+
+        <a-marker-camera preset="hiro">
+            <a-obj-model src="#cake-obj" mtl="#cake-mtl" rotation="60 20 -155" scale="1 0.5 1"></a-obj-model>            
+            
+            <a-entity rotation="-90 0 0">
+                <a-entity 
+                position="0 -7 -15" 
+                particle-system="
+                    preset: default; 
+                    color: #f9e154; 
+                    accelerationValue: 0, -10, 0; 
+                    particleCount: 3000;
+                    direction: -1;
+                    rotationAxis: z;
+                    rotation: -90, 0, 0">
+                </a-entity>
+            </a-entity>
+
+            <a-entity rotation="-120 0 0"> 
+                <a-entity 
+                    position="-1 0.25 0"
+                    material="color: red"
+                    scale="0.25 0.25 0.25"
+                    text-geometry="value: Happy B'day Aneri; font: #ultra">
+                </a-entity>
+            </a-entity>
+
+        </a-marker-camera>
+    </a-scene>
+</body>
+</html>
+

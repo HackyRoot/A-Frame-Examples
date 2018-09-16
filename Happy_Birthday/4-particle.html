@@ -1,0 +1,31 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>HBD Aneri</title>
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+        <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    </head>
+
+    <body style="margin: 0px; overflow: hidden;">
+        <a-scene embedded arjs="sourceType: webcam;">
+            <a-marker-camera preset="hiro">    
+                
+                <a-entity rotation="-90 0 0">
+                    <a-entity 
+                        position="0 -7 -15" 
+                        particle-system="
+                            preset: default; 
+                            color: #f9e154; 
+                            accelerationValue: 0, -10, 0; 
+                            particleCount: 3000;
+                            direction: -1;
+                            rotationAxis: z;
+                            rotation: -90, 0, 0">
+                    </a-entity>
+                </a-entity>
+                
+            </a-marker-camera>
+        </a-scene>        
+    </body>
+</html>

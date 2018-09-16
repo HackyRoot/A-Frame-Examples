@@ -1,0 +1,26 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Hello Mozilla</title>
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+        <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+    </head>
+
+    <body style="margin : 0px; overflow: hidden;">
+		<a-scene embedded arjs="sourceType: webcam;">
+            <a-marker-camera preset="hiro">
+                
+                <a-entity rotation="-120 0 0"> 
+                    <a-entity 
+                        position="-1 0.1 0"
+                        material="color: red"
+                        scale="0.5 0.5 0.5"
+                        text-geometry="value: Hello Mozilla">
+                    </a-entity>
+                </a-entity>
+                
+            </a-marker-camera>
+		</a-scene>
+    </body>
+</html>

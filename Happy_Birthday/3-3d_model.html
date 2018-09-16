@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>HBD Aneri</title>
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+    </head>
+
+    <body style="margin: 0px; overflow: hidden;">
+        <a-scene embedded arjs="sourceType: webcam;">
+            
+            <a-assets>
+                <a-asset-item id="cake-obj" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/cake.obj"></a-asset-item>
+                <a-asset-item id="cake-mtl" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/cake.mtl"></a-asset-item>
+            </a-assets>
+
+            <a-marker-camera present="hiro">
+                <a-obj-model src="#cake-obj" mtl="#cake-mtl" rotation="60 20 -155" scale="1 0.5 1"></a-obj-model>                
+            </a-marker-camera>
+
+        </a-scene>        
+    </body>
+</html>
