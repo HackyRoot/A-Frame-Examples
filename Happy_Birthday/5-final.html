@@ -16,7 +16,8 @@
             <a-asset-item id="ultra" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/e4751baf/Happy_Birthday/assets/ultra.json"></a-asset-item>
         </a-assets>
 
-        <a-marker-camera preset="hiro">
+        <!--<a-marker-camera preset="hiro">-->
+        <a-marker-camera type='pattern' patternUrl='/Users/paras/Zen/Code/birthday/A-Frame-Examples/Happy_Birthday/assets/pattern-card2.patt'>
             <a-obj-model src="#cake-obj" mtl="#cake-mtl" rotation="60 20 -155" scale="1 0.5 1"></a-obj-model>            
             
             <a-entity rotation="-90 0 0">
